@@ -23,3 +23,5 @@ def index(request,code):
   message = item+"於"+time+"成交價為"+price
   return JsonResponse({"message":message})
 
+def hi(request):
+  return HttpResponse('hi')
