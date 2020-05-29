@@ -1,1 +1,1 @@
-web: gunicorn iamforky_bot.wsgi
+web: gunicorn stock.wsgi
