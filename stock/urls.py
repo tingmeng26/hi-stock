@@ -19,6 +19,6 @@ from django.contrib import admin
 from hi_stock import views as hi_stock_views
 
 urlpatterns = [
-    url(r'^$', hi_stock_views.index),
+    url(r'^stock/(?P<code>[0-9]*)/$', hi_stock_views.index),
     url(r'^admin/', admin.site.urls),
 ]
